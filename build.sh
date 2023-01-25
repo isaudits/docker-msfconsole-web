@@ -1,4 +1,4 @@
 #!/bin/bash
 
-docker build -t isaudits/msfconsole-web .
+hooks/build
 docker image prune -f
