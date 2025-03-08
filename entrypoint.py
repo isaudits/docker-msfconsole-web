@@ -54,7 +54,7 @@ def main():
     port = args.port
     disable_ssl = args.disable_ssl
     
-    command = '/usr/bin/tini -- ttyd pymsfconsole.py'
+    command = '/usr/bin/tini -- ttyd --writable pymsfconsole.py'
 
     if username:
         command += ' -U ' + username
