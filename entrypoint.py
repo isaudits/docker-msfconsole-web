@@ -33,7 +33,7 @@ def main():
 
     if os.environ.get('MSF_RPC_SSL') is None:
         disable_ssl = False
-    elif os.environ.get('MSF_RPC_SSL').lower == 'true':
+    elif os.environ.get('MSF_RPC_SSL').lower() == 'true':
         disable_ssl = False
     else:
         disable_ssl = True
